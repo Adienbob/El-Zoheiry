@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
-import { LanguageProvider } from "@/components/LanguageContext";
 import "./globals.css";
+import type { Metadata } from "next";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Providers from "./components/Provider";
 
 
 
@@ -15,14 +16,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
-    <html lang="en" dir="ltr">
+    <html>
       <body>
-        <LanguageProvider>
+        <Providers>
           <Header />
           {children}
           <Footer />
-        </LanguageProvider>
+        </Providers>
       </body>
     </html>
   );
