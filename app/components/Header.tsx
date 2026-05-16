@@ -3,80 +3,79 @@ import { useState, useEffect } from "react";
 import { useLang } from "./LanguageContext";
 import { t } from "./translations";
 
-
 export default function Header() {
    const [menuOpen, setMenuOpen] = useState(false)
    const [active, setActive] = useState("Hero");   
    const { lang, setLang } = useLang()
    const T = t[lang]
+
    useEffect(() => {
       const sectionIds = ["Hero", "About", "Products", "Contact"];
-
-      const sections = sectionIds
-         .map((id) => document.getElementById(id))
-         .filter(Boolean);
+      const sections = sectionIds.map((id) => document.getElementById(id)).filter(Boolean);
 
       const observer = new IntersectionObserver(
          (entries) => {
             entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-               setActive(entry.target.id);
-            }
+               if (entry.isIntersecting) setActive(entry.target.id);
             });
          },
          { threshold: 0.6 }
       );
 
       sections.forEach((sec) => sec && observer.observe(sec));
-      console.log(active)
       return () => observer.disconnect();
    }, [active]);
 
    return (
-      <header className="flex justify-between py-3 px-6">
+      <header className="flex justify-between py-3 px-6 sticky top-0 z-1000 bg-bg border-b-1 border-stroke">
          <div>
-            <span className="font-display font-bold text-2xl text-muted tracking-[-1.2px] uppercase">
+            <span className="font-display font-bold text-2xl md:text-3xl text-muted tracking-[-1.2px] uppercase">
                GELPRO
             </span>
          </div>
+
          <nav>
-            <ul className="hidden md:flex gap-6">
+            <ul className="hidden md:flex gap-6 md:text-[16px]">
                <li>
                   <a 
-                  className={active === "Hero" ? "text-secondary border-b border-current pb-1 transition-all duration-300 ease-in-out" : "text-text"} 
-                  onClick={() => setActive("Hero")} 
-                  href="#Hero"
+                     className={active === "Hero" ? "text-secondary border-b border-current pb-1 transition-all duration-300 ease-in-out" : "text-text"} 
+                     onClick={() => setActive("Hero")} 
+                     href="#Hero"
                   >
                      {T.nav.home}
                   </a>
                </li>
+
                <li>
                   <a 
-                  className={active === "About" ? "text-secondary border-b border-current pb-1 transition-all duration-300 ease-in-out" : "text-text"}
-                  onClick={() => setActive("About")}  
-                  href="#About"
+                     className={active === "About" ? "text-secondary border-b border-current pb-1 transition-all duration-300 ease-in-out" : "text-text"}
+                     onClick={() => setActive("About")}  
+                     href="#About"
                   >
                      {T.nav.about}
                   </a>
                </li>
+
                <li>
                   <a 
-                  className={active === "Products" ? "text-secondary border-b border-current pb-1 transition-all duration-300 ease-in-out" : "text-text"} 
-                  onClick={() => setActive("Products")}  
-                  href="#Products"
+                     className={active === "Products" ? "text-secondary border-b border-current pb-1 transition-all duration-300 ease-in-out" : "text-text"} 
+                     onClick={() => setActive("Products")}  
+                     href="#Products"
                   >
                      {T.nav.products}
                   </a>
                </li>
+
                <li>
                   <a 
-                  className={active === "Contact" ? "text-secondary border-b border-current pb-1 transition-all duration-300 ease-in-out" : "text-text"} 
-                  onClick={() => setActive("Contact")}  
-                  href="#Contact">
+                     className={active === "Contact" ? "text-secondary border-b border-current pb-1 transition-all duration-300 ease-in-out" : "text-text"} 
+                     onClick={() => setActive("Contact")}  
+                     href="#Contact">
                      {T.nav.contact}
                   </a>
                </li>
             </ul>
+
             <button
                onClick={() => setMenuOpen(!menuOpen)}
                className="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 cursor-pointer"
@@ -95,9 +94,10 @@ export default function Header() {
                </ul>
             </div>
          </nav>
+
          <div>
-            <button className="cursor-pointer" onClick={() => setLang(lang === "ar" ? "en" : "ar")}>
-            {lang.toUpperCase()}
+            <button className="cursor-pointer md:text-[16px]" onClick={() => setLang(lang === "ar" ? "en" : "ar")}>
+               {lang.toUpperCase()}
             </button>
          </div>
       </header>

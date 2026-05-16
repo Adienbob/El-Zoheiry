@@ -10,7 +10,6 @@ export default function Hero() {
    return (
       <section className="relative px-6 py-[129px]">
          <div className="absolute inset-0 z-0">
-            {/* image */}
             <Image
                src="/Background.png"
                alt="hero background"
@@ -19,16 +18,22 @@ export default function Hero() {
                className="object-cover"
             />
 
-            {/* gradient overlay */}
             <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(8,16,23,1)_0%,rgba(8,16,23,0.8)_50%,rgba(8,16,23,0)_100%)]" />
          </div>
          <div className="relative z-10">
-            <span className="text-secondary px-3 py-1 border border-current bg-secondary/5 text-[10px] tracking-[3px] leading-[15px]">
+            <span className="text-secondary px-3 py-1 border border-current bg-secondary/5 text-[10px] md:text-[12px] tracking-[3px] leading-[15px] md:leading-[18px]">
                {T.hero.since}
             </span>
-            <h1 className="text-muted text-[40px] leading-[48px] tracking-[0.4px] my-6">{T.hero.title}</h1>
-            <p className="text-text leading-[26px] mb-12">{T.hero.subtitle}</p>
-            <a className="bg-surface text-accent block py-3 text-center font-bold text-[12px] tracking-[1.2px] leading-[12px]" href={"#Products"}>
+
+            <h1 className="text-muted text-[40px] md:text-[56px] leading-[48px] md:leading-[64px] tracking-[0.4px] my-6">
+               {T.hero.title}
+            </h1>
+
+            <p className="text-text leading-[26px] md:text-[18px] md:leading-[30px] mb-12">
+               {T.hero.subtitle}
+            </p>
+
+            <a className="bg-surface text-accent block py-3 text-center font-bold text-[12px] md:text-[14px] tracking-[1.2px] leading-[12px] md:leading-[14px] md:w-fit md:px-9 md:py-6" href={"#Products"}>
                {T.hero.cta.toUpperCase()}
             </a>
          </div>
