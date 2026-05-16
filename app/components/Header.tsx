@@ -27,19 +27,21 @@ export default function Header() {
    }, [active]);
 
    return (
-      <header className="flex justify-between py-3 px-6 sticky top-0 z-1000 bg-bg border-b-1 border-stroke">
+      <header className="flex justify-between lg:justify-between lg:px-20 lg:py-5 py-3 px-6 sticky top-0 z-1000 bg-bg border-b-1 border-stroke">
+         
          <div>
-            <span className="font-display font-bold text-2xl md:text-3xl text-muted tracking-[-1.2px] uppercase">
+            <span className="font-display font-bold text-2xl md:text-3xl lg:text-4xl text-muted tracking-[-1.2px] uppercase">
                GELPRO
             </span>
          </div>
 
-         <nav>
-            <ul className="hidden md:flex gap-6 md:text-[16px]">
+         <nav className="lg:flex-1 lg:flex lg:justify-center">
+            <ul className="hidden md:flex gap-6 lg:gap-10 md:text-[16px] lg:text-[17px]">
                <li>
                   <a 
-                     className={active === "Hero" ? "text-secondary border-b border-current pb-1 transition-all duration-300 ease-in-out" : "text-text"} 
-                     onClick={() => setActive("Hero")} 
+                     className={active === "Hero" 
+                        ? "text-secondary border-b border-current pb-1 transition-all duration-300 ease-in-out" 
+                        : "text-text"} 
                      href="#Hero"
                   >
                      {T.nav.home}
@@ -48,8 +50,9 @@ export default function Header() {
 
                <li>
                   <a 
-                     className={active === "About" ? "text-secondary border-b border-current pb-1 transition-all duration-300 ease-in-out" : "text-text"}
-                     onClick={() => setActive("About")}  
+                     className={active === "About" 
+                        ? "text-secondary border-b border-current pb-1 transition-all duration-300 ease-in-out" 
+                        : "text-text"}
                      href="#About"
                   >
                      {T.nav.about}
@@ -58,8 +61,9 @@ export default function Header() {
 
                <li>
                   <a 
-                     className={active === "Products" ? "text-secondary border-b border-current pb-1 transition-all duration-300 ease-in-out" : "text-text"} 
-                     onClick={() => setActive("Products")}  
+                     className={active === "Products" 
+                        ? "text-secondary border-b border-current pb-1 transition-all duration-300 ease-in-out" 
+                        : "text-text"} 
                      href="#Products"
                   >
                      {T.nav.products}
@@ -68,9 +72,11 @@ export default function Header() {
 
                <li>
                   <a 
-                     className={active === "Contact" ? "text-secondary border-b border-current pb-1 transition-all duration-300 ease-in-out" : "text-text"} 
-                     onClick={() => setActive("Contact")}  
-                     href="#Contact">
+                     className={active === "Contact" 
+                        ? "text-secondary border-b border-current pb-1 transition-all duration-300 ease-in-out" 
+                        : "text-text"} 
+                     href="#Contact"
+                  >
                      {T.nav.contact}
                   </a>
                </li>
@@ -96,7 +102,10 @@ export default function Header() {
          </nav>
 
          <div>
-            <button className="cursor-pointer md:text-[16px]" onClick={() => setLang(lang === "ar" ? "en" : "ar")}>
+            <button
+               className="cursor-pointer md:text-[16px] lg:text-[18px]"
+               onClick={() => setLang(lang === "ar" ? "en" : "ar")}
+            >
                {lang.toUpperCase()}
             </button>
          </div>
