@@ -1,26 +1,54 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Colors */
+  --color-primary:        #2A7FBF;
+  --color-secondary:      #E6C364;
+  --color-tertiary:       #4AA8E8;
+  --color-neutral:        #111920;
+
+  --color-bg:             #0C141B;
+  --color-second-bg:      #141C23;
+  --color-surface:        #98CBFF;
+  --color-border:         #1E2D3A;
+
+  --color-accent:         #003354;
+  --color-accent-light:   #4AA8E8;
+  --color-highlight:      #C9A84C;
+
+  --color-text:           #C0C7D1;
+  --color-muted:          #DBE3ED;
+  --color-form:           #182028;
+  --color-stroke:         #404750;
+
+  /* Fonts */
+  --font-display:         "Playfair Display", serif;
+  --font-heading:         "Cormorant Garamond", serif;
+  --font-body:            "DM Sans", sans-serif;
+  --font-arabic:          "Noto Sans Arabic", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+[dir="rtl"] body {
+  font-family: var(--font-arabic);
+}
+
+/* Light theme — ready for toggle */
+[data-theme="light"] {
+  --color-bg:         #F4F7FA;
+  --color-surface:    #FFFFFF;
+  --color-border:     #D0DCE8;
+  --color-text:       #0A0F14;
+  --color-muted:      #4A6070;
 }

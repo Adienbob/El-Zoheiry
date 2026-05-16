@@ -7,6 +7,7 @@ export const t = {
          contact: "Contact",
       },
       hero: {
+         since: "ESTABLISHED 1994",
          title: "Industrial Gelatin Manufacturer",
          subtitle: "Premium quality gelatin for food, pharmaceutical & industrial use",
          cta: "Explore Products",
@@ -26,6 +27,16 @@ export const t = {
          { id: "prod-3", name: "Industrial Gelatin", desc: "Adhesives, photography, and technical applications." },
          { id: "prod-4", name: "Collagen Peptides", desc: "Hydrolyzed gelatin for nutrition and cosmetics." },
          ],
+      },
+      certificate: {
+         label: "COMPLIANCE",
+         title: "Certificates & Standards",
+         certificates: [
+            { id: "CERT-1", name: "ISO 9001", desc: "Global benchmark for quality management systems and operational consistency.", type: "QUALITY MANAGEMENT" },
+            { id: "CERT-2", name: "ISO 14001", desc: "Demonstrating our commitment to environmental responsibility and sustainable production.", type: "ENVIRONMENTAL SYSTEMS" },
+            { id: "CERT-3", name: "REACH Compliance", desc: "Full adherence to European chemical regulations for safety and environmental health.", type: "CHEMICAL REGULATION" },
+            { id: "CERT-4", name: "CE Marking", desc: "Ensuring products meet the highest safety, health, and environmental requirements.", type: "EUROPEAN STANDARDS" }
+         ]
       },
       contact: {
          label: "Get In Touch",
@@ -48,7 +59,8 @@ export const t = {
          contact: "تواصل معنا",
       },
       hero: {
-         title: "مصنع الجيلاتين الصناعي",
+         since: "منذ 1994",
+         title: "الزهرى للجلاتين الصناعى",
          subtitle: "جيلاتين عالي الجودة للاستخدامات الغذائية والدوائية والصناعية",
          cta: "استعرض المنتجات",
       },
@@ -67,6 +79,36 @@ export const t = {
          { id: "prod-3", name: "جيلاتين صناعي", desc: "المواد اللاصقة والتصوير الفوتوغرافي والتطبيقات التقنية." },
          { id: "prod-4", name: "ببتيدات الكولاجين", desc: "جيلاتين متحلل للتغذية ومستحضرات التجميل." },
          ],
+      },
+      certificate: {
+         label: "الاعتمادات",
+         title: "الشهادات والمعايير الدولية",
+         certificates: [
+            {
+               id: "CERT-1",
+               name: "ISO 9001",
+               desc: "نطبق أفضل الممارسات العالمية لضمان جودة المنتجات واستقرار العمليات التشغيلية.",
+               type: "نظام إدارة الجودة"
+            },
+            {
+               id: "CERT-2",
+               name: "ISO 14001",
+               desc: "نلتزم بإدارة بيئية مسؤولة وتقليل الأثر البيئي لعمليات الإنتاج.",
+               type: "الإدارة البيئية"
+            },
+            {
+               id: "CERT-3",
+               name: "REACH Compliance",
+               desc: "امتثال كامل للتشريعات الأوروبية الخاصة بسلامة المواد الكيميائية وحماية البيئة.",
+               type: "تشريعات المواد الكيميائية"
+            },
+            {
+               id: "CERT-4",
+               name: "CE Marking",
+               desc: "منتجاتنا مطابقة لمتطلبات الاتحاد الأوروبي من حيث السلامة والصحة وحماية البيئة.",
+               type: "المعايير الأوروبية"
+            }
+         ]
       },
       contact: {
          label: "تواصل معنا",

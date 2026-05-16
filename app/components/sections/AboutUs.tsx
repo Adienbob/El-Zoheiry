@@ -9,14 +9,14 @@ export default function About() {
 
 
    return (
-      <section>
-         <span>
-            {T.about.label}
+      <section className="py-20 px-6 bg-bg border-t border-stroke">
+         <span className="text-secondary text-[12px] tracking-[3px] leading-[15px]">
+            {T.about.label.toUpperCase()}
          </span>
-         <h2>
+         <h2 className="text-[32px] tracking-[1.6px] leading-[41.6px] text-muted mb-6">
             {T.about.title}
          </h2>
-         <p>
+         <p className="leading-[26px] text-text">
             {T.about.body}
          </p>
       </section>
