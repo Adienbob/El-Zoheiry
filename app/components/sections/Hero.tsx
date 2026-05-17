@@ -8,18 +8,25 @@ export default function Hero() {
    const T = t[lang]
 
    return (
-      <section className="relative px-6 lg:px-20 py-[129px] lg:py-[160px]">
+      <section
+         aria-labelledby="hero-heading"
+         className="relative px-6 lg:px-20 py-[129px] lg:py-[160px]"
+      >
          
          <div className="absolute inset-0 z-0">
             <Image
                src="/Background.png"
-               alt="hero background"
+               alt=""
+               aria-hidden="true"
                fill
                priority
                className="object-cover"
             />
 
-            <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(8,16,23,1)_0%,rgba(8,16,23,0.8)_50%,rgba(8,16,23,0)_100%)]" />
+            <div 
+               aria-hidden="true"
+               className="absolute inset-0 bg-[linear-gradient(to_right,rgba(8,16,23,1)_0%,rgba(8,16,23,0.8)_50%,rgba(8,16,23,0)_100%)]" 
+            />
          </div>
 
          <div className="relative z-10 max-w-[720px] lg:max-w-[900px]">
@@ -28,7 +35,10 @@ export default function Hero() {
                {T.hero.since}
             </span>
 
-            <h1 className="text-muted text-[40px] md:text-[56px] lg:text-[72px] leading-[48px] md:leading-[64px] lg:leading-[78px] tracking-[0.4px] my-6">
+            <h1
+               id="hero-heading"
+               className="text-muted text-[40px] md:text-[56px] lg:text-[72px] leading-[48px] md:leading-[64px] lg:leading-[78px] tracking-[0.4px] my-6"
+            >
                {T.hero.title}
             </h1>
 
@@ -37,12 +47,12 @@ export default function Hero() {
             </p>
 
             <a
-               className="bg-surface text-accent block py-3 text-center font-bold text-[12px] md:text-[14px] lg:text-[15px] tracking-[1.2px] leading-[12px] md:leading-[14px] md:w-fit md:px-9 md:py-6 lg:px-10 lg:py-7"
                href="#Products"
+               aria-label={`${T.hero.cta} - ${T.hero.title}`}
+               className="bg-surface text-accent block py-3 text-center font-bold text-[12px] md:text-[14px] lg:text-[15px] tracking-[1.2px] leading-[12px] md:leading-[14px] md:w-fit md:px-9 md:py-6 lg:px-10 lg:py-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
             >
                {T.hero.cta.toUpperCase()}
             </a>
-
          </div>
       </section>
    )

@@ -35,13 +35,14 @@ export default function Header() {
             </span>
          </div>
 
-         <nav className="lg:flex-1 lg:flex lg:justify-center">
+         <nav aria-label="Main navigation" className="lg:flex-1 lg:flex lg:justify-center">
             <ul className="hidden md:flex gap-6 lg:gap-10 md:text-[16px] lg:text-[17px]">
                <li>
                   <a 
+                     aria-current={active === "Hero" ? "page" : undefined}
                      className={active === "Hero" 
-                        ? "text-secondary border-b border-current pb-1 transition-all duration-300 ease-in-out" 
-                        : "text-text"} 
+                        ? "text-secondary border-b border-current pb-1 transition-all duration-300 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" 
+                        : "text-text focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2"} 
                      href="#Hero"
                   >
                      {T.nav.home}
@@ -50,9 +51,10 @@ export default function Header() {
 
                <li>
                   <a 
+                     aria-current={active === "About" ? "page" : undefined}
                      className={active === "About" 
-                        ? "text-secondary border-b border-current pb-1 transition-all duration-300 ease-in-out" 
-                        : "text-text"}
+                        ? "text-secondary border-b border-current pb-1 transition-all duration-300 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" 
+                        : "text-text focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2"}
                      href="#About"
                   >
                      {T.nav.about}
@@ -61,9 +63,10 @@ export default function Header() {
 
                <li>
                   <a 
+                     aria-current={active === "Products" ? "page" : undefined}
                      className={active === "Products" 
-                        ? "text-secondary border-b border-current pb-1 transition-all duration-300 ease-in-out" 
-                        : "text-text"} 
+                        ? "text-secondary border-b border-current pb-1 transition-all duration-300 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" 
+                        : "text-text focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2"} 
                      href="#Products"
                   >
                      {T.nav.products}
@@ -72,9 +75,10 @@ export default function Header() {
 
                <li>
                   <a 
+                     aria-current={active === "Contact" ? "page" : undefined}
                      className={active === "Contact" 
-                        ? "text-secondary border-b border-current pb-1 transition-all duration-300 ease-in-out" 
-                        : "text-text"} 
+                        ? "text-secondary border-b border-current pb-1 transition-all duration-300 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" 
+                        : "text-text focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2"} 
                      href="#Contact"
                   >
                      {T.nav.contact}
@@ -83,15 +87,18 @@ export default function Header() {
             </ul>
 
             <button
+               aria-expanded={menuOpen}
+               aria-controls="mobile-menu"
+               aria-label="Toggle menu"
                onClick={() => setMenuOpen(!menuOpen)}
-               className="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 cursor-pointer"
+               className="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2"
             >
                <span className={`block w-6 h-0.5 bg-muted transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
                <span className={`block w-6 h-0.5 bg-muted transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`} />
                <span className={`block w-6 h-0.5 bg-muted transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
             </button>
 
-            <div className={`md:hidden overflow-hidden transition-all duration-300 ${menuOpen ? "max-h-64" : "max-h-0"}`}>
+            <div id="mobile-menu" className={`md:hidden overflow-hidden transition-all duration-300 ${menuOpen ? "max-h-64" : "max-h-0"}`}>
                <ul className="flex flex-col px-6 py-4 gap-4 border-t border-border bg-surface">
                   <li><a href="#Hero" onClick={() => setMenuOpen(false)}>{T.nav.home}</a></li>
                   <li><a href="#About" onClick={() => setMenuOpen(false)}>{T.nav.about}</a></li>
@@ -103,7 +110,8 @@ export default function Header() {
 
          <div>
             <button
-               className="cursor-pointer md:text-[16px] lg:text-[18px]"
+               aria-label="Change language"
+               className="cursor-pointer md:text-[16px] lg:text-[18px] focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2"
                onClick={() => setLang(lang === "ar" ? "en" : "ar")}
             >
                {lang.toUpperCase()}

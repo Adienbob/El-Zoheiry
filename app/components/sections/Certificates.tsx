@@ -7,13 +7,19 @@ export default function Certificates() {
    const T = t[lang];
 
    return (
-      <section className="py-20 lg:py-28 px-6 lg:px-20 grid">
+      <section
+         aria-labelledby="certificates-heading"
+         className="py-20 lg:py-28 px-6 lg:px-20 grid"
+      >
          
-         <span className="tracking-[4px] leading-[24px] text-secondary md:text-[18px] lg:text-[20px]">
+         <p className="tracking-[4px] leading-[24px] text-secondary md:text-[18px] lg:text-[20px]">
             {T.certificate.label}
-         </span>
+         </p>
 
-         <h2 className="text-[32px] md:text-[44px] lg:text-[52px] tracking-[1.6px] leading-[41.6px] md:leading-[54px] lg:leading-[62px] text-muted mt-3">
+         <h2
+            id="certificates-heading"
+            className="text-[32px] md:text-[44px] lg:text-[52px] tracking-[1.6px] leading-[41.6px] md:leading-[54px] lg:leading-[62px] text-muted mt-3"
+         >
             {T.certificate.title}
          </h2>
 
@@ -21,11 +27,15 @@ export default function Certificates() {
             
             {T.certificate.certificates.map((cert) => (
                <article
+                  aria-labelledby={`certificate-${cert.id}-title`}
                   className="border-t-2 border-secondary bg-form p-6 lg:p-8 hover:border-accent transition-all duration-300"
                   key={cert.id}
                >
                   
-                  <h3 className="font-semibold leading-[24px] md:text-[20px] lg:text-[22px] md:leading-[30px] lg:leading-[32px] text-muted mb-3">
+                  <h3
+                     id={`certificate-${cert.id}-title`}
+                     className="font-semibold leading-[24px] md:text-[20px] lg:text-[22px] md:leading-[30px] lg:leading-[32px] text-muted mb-3"
+                  >
                      {cert.name}
                   </h3>
 
@@ -33,9 +43,9 @@ export default function Certificates() {
                      {cert.desc}
                   </p>
 
-                  <span className="text-secondary text-[10px] md:text-[12px] lg:text-[13px] leading-[15px] md:leading-[18px]">
+                  <p className="text-secondary text-[10px] md:text-[12px] lg:text-[13px] leading-[15px] md:leading-[18px]">
                      {cert.type}
-                  </span>
+                  </p>
 
                </article>
             ))}

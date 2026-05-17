@@ -7,15 +7,21 @@ export default function About() {
    const T = t[lang]
 
    return (
-      <section className="py-20 lg:py-28 px-6 lg:px-20 bg-bg border-t border-stroke">
+      <section
+         aria-labelledby="about-heading"
+         className="py-20 lg:py-28 px-6 lg:px-20 bg-bg border-t border-stroke"
+      >
          
          <div className="max-w-[900px]">
             
-            <span className="text-secondary text-[12px] md:text-[14px] lg:text-[15px] tracking-[3px] leading-[15px] md:leading-[18px]">
+            <p className="text-secondary text-[12px] md:text-[14px] lg:text-[15px] tracking-[3px] leading-[15px] md:leading-[18px]">
                {T.about.label.toUpperCase()}
-            </span>
+            </p>
 
-            <h2 className="text-[32px] md:text-[44px] lg:text-[52px] tracking-[1.6px] leading-[41.6px] md:leading-[54px] lg:leading-[62px] text-muted mb-6">
+            <h2
+               id="about-heading"
+               className="text-[32px] md:text-[44px] lg:text-[52px] tracking-[1.6px] leading-[41.6px] md:leading-[54px] lg:leading-[62px] text-muted mb-6"
+            >
                {T.about.title}
             </h2>
 
