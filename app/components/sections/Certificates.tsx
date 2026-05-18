@@ -10,6 +10,7 @@ export default function Certificates() {
       <section
          aria-labelledby="certificates-heading"
          className="py-20 lg:py-28 px-6 lg:px-20 grid"
+         id="Certificates"
       >
          
          <p className="tracking-[4px] leading-[24px] text-secondary md:text-[18px] lg:text-[20px]">
@@ -28,7 +29,7 @@ export default function Certificates() {
             {T.certificate.certificates.map((cert) => (
                <article
                   aria-labelledby={`certificate-${cert.id}-title`}
-                  className="border-t-2 border-secondary bg-form p-6 lg:p-8 hover:border-accent transition-all duration-300"
+                  className="border-t-4 border-stroke hover:border-secondary bg-form p-6 lg:p-8 hover: transition-all duration-300"
                   key={cert.id}
                >
                   

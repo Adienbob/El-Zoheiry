@@ -10,6 +10,7 @@ export default function About() {
       <section
          aria-labelledby="about-heading"
          className="py-20 lg:py-28 px-6 lg:px-20 bg-bg border-t border-stroke"
+         id="About"
       >
          
          <div className="max-w-[900px]">

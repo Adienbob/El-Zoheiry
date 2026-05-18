@@ -11,6 +11,7 @@ export default function Hero() {
       <section
          aria-labelledby="hero-heading"
          className="relative px-6 lg:px-20 py-[129px] lg:py-[160px]"
+         id="Hero"
       >
          
          <div className="absolute inset-0 z-0">

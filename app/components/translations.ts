@@ -4,6 +4,7 @@ export const t = {
          home: "Home",
          about: "About Us",
          products: "Products",
+         certificates: "Certificates",
          contact: "Contact",
       },
       hero: {
@@ -56,6 +57,7 @@ export const t = {
          home: "الرئيسية",
          about: "من نحن",
          products: "المنتجات",
+         certificates: "الشهادات",
          contact: "تواصل معنا",
       },
       hero: {

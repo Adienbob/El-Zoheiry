@@ -11,6 +11,7 @@ export default function Products() {
       <section
          aria-labelledby="products-heading"
          className="bg-second-bg px-6 lg:px-20 py-20 lg:py-28"
+         id="Products"
       >
          
          <p className="text-secondary text-center block md:text-[18px] lg:text-[20px]">
@@ -31,17 +32,17 @@ export default function Products() {
             {T.products.items.map((item) => (
                <article
                   aria-labelledby={`product-${item.id}-title`}
-                  className="border border-[#404750] bg-bg p-6 lg:p-8 hover:border-secondary transition-all duration-300"
+                  className="group border border-[#404750] bg-bg p-6 lg:p-8 hover:border-secondary transition-all duration-300"
                   key={item.id}
                >
                   
-                  <div className="relative w-full h-[220px] lg:h-[260px] mb-6">
+                  <div className="relative w-full h-[220px] lg:h-[260px] mb-6 ">
                      <Image
-                        src={"/Product.png"}
+                        src={"/product.png"}
                         alt=""
                         aria-hidden="true"
                         fill
-                        className="object-cover"
+                        className="object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
                      />
                   </div>
 

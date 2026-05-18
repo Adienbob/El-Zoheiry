@@ -11,7 +11,7 @@ export default function Contact() {
       <section
          id="Contact"
          aria-labelledby="contact-heading"
-         className="px-6 py-20 bg-second-bg grid md:grid-cols-2"
+         className="px-6 py-20 bg-second-bg grid md:grid-cols-2 lg:px-20 lg:py-28"
       >
          <div>
             <p className="text-secondary tracking-[4px] leading-[24px] mb-3 block md:text-[18px]">

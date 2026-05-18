@@ -10,7 +10,7 @@ export default function Header() {
    const T = t[lang]
 
    useEffect(() => {
-      const sectionIds = ["Hero", "About", "Products", "Contact"];
+      const sectionIds = ["Hero", "About", "Products", "Certificates", "Contact"];
       const sections = sectionIds.map((id) => document.getElementById(id)).filter(Boolean);
 
       const observer = new IntersectionObserver(
@@ -19,12 +19,12 @@ export default function Header() {
                if (entry.isIntersecting) setActive(entry.target.id);
             });
          },
-         { threshold: 0.6 }
+         { threshold: 0.4 }
       );
 
       sections.forEach((sec) => sec && observer.observe(sec));
       return () => observer.disconnect();
-   }, [active]);
+   }, []);
 
    return (
       <header className="flex justify-between lg:justify-between lg:px-20 lg:py-5 py-3 px-6 sticky top-0 z-1000 bg-bg border-b-1 border-stroke">
@@ -75,6 +75,18 @@ export default function Header() {
 
                <li>
                   <a 
+                     aria-current={active === "Certificates" ? "page" : undefined}
+                     className={active === "Certificates" 
+                        ? "text-secondary border-b border-current pb-1 transition-all duration-300 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" 
+                        : "text-text focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2"} 
+                     href="#Certificates"
+                  >
+                     {T.nav.certificates}
+                  </a>
+               </li>
+
+               <li>
+                  <a 
                      aria-current={active === "Contact" ? "page" : undefined}
                      className={active === "Contact" 
                         ? "text-secondary border-b border-current pb-1 transition-all duration-300 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2" 
@@ -103,6 +115,7 @@ export default function Header() {
                   <li><a href="#Hero" onClick={() => setMenuOpen(false)}>{T.nav.home}</a></li>
                   <li><a href="#About" onClick={() => setMenuOpen(false)}>{T.nav.about}</a></li>
                   <li><a href="#Products" onClick={() => setMenuOpen(false)}>{T.nav.products}</a></li>
+                  <li><a href="#Certificates" onClick={() => setMenuOpen(false)}>{T.nav.certificates}</a></li>
                   <li><a href="#Contact" onClick={() => setMenuOpen(false)}>{T.nav.contact}</a></li>
                </ul>
             </div>
