@@ -1,5 +1,28 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Cormorant";
+  src: url("/fonts/CormorantGaramond-VariableFont_wght.ttf")
+  format("truetype");
+  font-weight: 100 900;
+
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("/fonts/DMSans-VariableFont_opsz,wght.ttf")
+  format("truetype");
+  font-weight: 300 700;
+}
+
+@font-face {
+  font-family: "Noto Sans Arabic";
+  src: url("/fonts/NotoSansArabic-VariableFont_wdth,wght.ttf")
+  format("truetype");
+  font-weight: 300 700;
+
+}
+
 @theme inline {
   /* Colors */
   --color-primary:        #2A7FBF;
@@ -23,7 +46,7 @@
 
   /* Fonts */
   --font-display:         "Playfair Display", serif;
-  --font-heading:         "Cormorant Garamond", serif;
+  --font-heading:         "Cormorant", serif;
   --font-body:            "DM Sans", sans-serif;
   --font-arabic:          "Noto Sans Arabic", sans-serif;
 }
@@ -40,15 +63,37 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
 [dir="rtl"] body {
   font-family: var(--font-arabic);
 }
 
 /* Light theme — ready for toggle */
 [data-theme="light"] {
-  --color-bg:         #F4F7FA;
-  --color-surface:    #FFFFFF;
-  --color-border:     #D0DCE8;
-  --color-text:       #0A0F14;
-  --color-muted:      #4A6070;
+  --color-primary:        #2A7FBF;
+  --color-secondary:      #C9A84C;
+  --color-tertiary:       #4AA8E8;
+  --color-neutral:        #F5F8FB;
+
+  --color-bg:             #F8FBFE;
+  --color-second-bg:      #EDF4FA;
+  --color-surface:        #FFFFFF;
+  --color-border:         #D6E2EE;
+
+  --color-accent:         #003354;
+  --color-accent-light:   #2A7FBF;
+  --color-highlight:      #E6C364;
+
+  --color-text:           #111920;
+  --color-muted:          #5F6B76;
+  --color-form:           #FFFFFF;
+  --color-stroke:         #C4D0DB;
 }

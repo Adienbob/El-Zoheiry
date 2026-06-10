@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { useLang } from "./LanguageContext";
 import { t } from "./translations";
+import Image from "next/image";
 
 export default function Header() {
    const [menuOpen, setMenuOpen] = useState(false)
@@ -27,14 +28,15 @@ export default function Header() {
    }, []);
 
    return (
-      <header className="flex justify-between lg:justify-between lg:px-20 lg:py-5 py-3 px-6 sticky top-0 z-1000 bg-bg border-b-1 border-stroke">
+      <header dir="ltr" className="flex justify-between lg:justify-between lg:px-20 lg:py-5 py-3 px-6 sticky top-0 z-1000 bg-bg border-b-1 border-stroke">
          
-         <div>
-            <span className="font-display font-bold text-2xl md:text-3xl lg:text-4xl text-muted tracking-[-1.2px] uppercase">
-               GELPRO
-            </span>
+         <div className="flex items-center">
+            <a href="#Hero">
+               <span className="font-display font-bold text-2xl md:text-3xl lg:text-4xl text-muted tracking-[-1.2px] uppercase flex">
+                  Al-<Image src={"/Alostaz.png"} width={50} height={10} alt="" />ostaz
+               </span>
+            </a>
          </div>
-
          <nav aria-label="Main navigation" className="lg:flex-1 lg:flex lg:justify-center">
             <ul className="hidden md:flex gap-6 lg:gap-10 md:text-[16px] lg:text-[17px]">
                <li>
