@@ -32,8 +32,17 @@ export default function Header() {
          
          <div className="flex items-center">
             <a href="#Hero">
-               <span className="font-display font-bold text-2xl md:text-3xl lg:text-4xl text-muted tracking-[-1.2px] uppercase flex">
-                  Al-<Image src={"/Alostaz.png"} width={50} height={10} alt="" />ostaz
+               <span className="font-display font-bold text-2xl md:text-3xl lg:text-4xl text-muted tracking-[-1.2px] uppercase flex items-center">
+                  <div className="relative h-[40px] w-[37.5px]">
+                     <Image
+                        src="/Alostaz.png"
+                        fill
+                        className="object-contain"
+                        alt=""
+                     />
+                  </div>
+
+                  <p>l-ostaz</p>
                </span>
             </a>
          </div>

@@ -38,11 +38,11 @@ export default function Products() {
                   
                   <div className="relative w-full h-[220px] lg:h-[260px] mb-6 ">
                      <Image
-                        src={"/product.png"}
+                        src={`/${item.id}.png`}
                         alt=""
                         aria-hidden="true"
                         fill
-                        className="object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
+                        className="w-full h-full grayscale group-hover:grayscale-0 transition-all duration-300"
                      />
                   </div>
 

@@ -8,40 +8,73 @@ export const t = {
          contact: "Contact",
       },
       hero: {
-         since: "ESTABLISHED 1994",
-         title: "Industrial Gelatin Manufacturer",
-         subtitle: "Premium quality gelatin for food, pharmaceutical & industrial use",
+         since: "ESTABLISHED 1937",
+         title: "Al-Ostaz Industrial Gelatin Company",
+         subtitle:
+            "A leading manufacturer and exporter of high-quality technical gelatin with bloom strength ranging from 220 to 320, ensuring maximum viscosity and industrial performance.",
          cta: "Explore Products",
       },
+
       about: {
-         label: "Who We Are",
-         title: "Decades of Expertise in Gelatin Production",
-         body: "We are a leading industrial gelatin manufacturer committed to delivering high-purity gelatin products that meet international standards. Our state-of-the-art facility ensures precision at every stage of production.",
-         getIt: "GET IT NOW"
+         label: "About Us",
+         title: "A Legacy of Excellence in Animal Gelatin Glue Manufacturing",
+         body: `
+            At Al-Ostaz, manufacturing animal gelatin glue is more than a business—it's a craft that has been passed down through generations. Our story began decades ago, preserving and refining the expertise and techniques required to produce pure, high-quality gelatin. Today, we combine this heritage with advanced manufacturing technologies.
+
+            Throughout the years, we have remained committed to quality and excellence in gelatin glue production. By blending traditional expertise with continuous innovation, we have built a reputation based on trust and reliability, delivering premium products that meet the needs of diverse industries and markets.
+         `,
+         getIt: "Get It Now",
       },
+
       products: {
          label: "Our Products",
-         title: "Gelatin Solutions for Every Industry",
+         title: "High-Quality Gelatin Products for Various Applications",
          items: [
-         { id: "prod-1", name: "Food Grade Gelatin", desc: "Used in confectionery, dairy, and meat processing." },
-         { id: "prod-2", name: "Pharmaceutical Gelatin", desc: "Hard and soft capsule shells, tablet coatings." },
-         { id: "prod-3", name: "Industrial Gelatin", desc: "Adhesives, photography, and technical applications." },
-         { id: "prod-4", name: "Collagen Peptides", desc: "Hydrolyzed gelatin for nutrition and cosmetics." },
+            {
+               id: "prod-1",
+               name: "Pure Industrial Gelatin (Hide Glue)",
+               desc: "A high-quality animal-based industrial gelatin with excellent bonding strength and consistent performance for a wide range of industrial applications.",
+            },
+            {
+               id: "prod-2",
+               name: "Premium Technical Gelatin",
+               desc: "A highly refined technical gelatin offering advanced performance characteristics and reliable results for demanding industrial uses.",
+            },
+            {
+               id: "prod-3",
+               name: "Gelly Glue",
+               desc: "An eco-friendly gelatin adhesive produced from natural materials, delivering dependable performance while supporting sustainable industrial practices.",
+            },
          ],
       },
+
       certificate: {
-         label: "COMPLIANCE",
-         title: "Certificates & Standards",
+         label: "CERTIFICATIONS",
+         title: "Certificates & International Standards",
          certificates: [
-            { id: "CERT-1", name: "ISO 9001", desc: "Global benchmark for quality management systems and operational consistency.", type: "QUALITY MANAGEMENT" },
-            { id: "CERT-2", name: "ISO 14001", desc: "Demonstrating our commitment to environmental responsibility and sustainable production.", type: "ENVIRONMENTAL SYSTEMS" },
-            { id: "CERT-3", name: "REACH Compliance", desc: "Full adherence to European chemical regulations for safety and environmental health.", type: "CHEMICAL REGULATION" },
-            { id: "CERT-4", name: "CE Marking", desc: "Ensuring products meet the highest safety, health, and environmental requirements.", type: "EUROPEAN STANDARDS" }
-         ]
+            {
+               id: "CERT-1",
+               name: "ISO 9001",
+               desc: "Implementation of internationally recognized quality management practices to ensure product excellence and operational consistency.",
+               type: "QUALITY MANAGEMENT SYSTEM",
+            },
+            {
+               id: "CERT-2",
+               name: "ISO 14001",
+               desc: "Commitment to responsible environmental management and reducing the environmental impact of production processes.",
+               type: "ENVIRONMENTAL MANAGEMENT",
+            },
+            {
+               id: "CERT-3",
+               name: "REACH Compliance",
+               desc: "Full compliance with European regulations governing chemical safety and environmental protection.",
+               type: "CHEMICAL REGULATIONS",
+            },
+         ],
       },
       contact: {
          label: "Get In Touch",
-         title: "Let's Work Together",
+         title: "Let's Build a Partnership",
          name: "Full Name",
          email: "Email Address",
          message: "Your Message",
@@ -63,7 +96,7 @@ export const t = {
       hero: {
          since: "منذ 1937",
          title: "الأستاذ للجلاتين الصناعي",
-         subtitle: "رائدون في تصنيع و تصدير الجلاتين الفنى عالى الجودة بقوة بلوم تتراوح بين 220 إلى 320 لضمان أقصى درجات اللزوجة و الكفاءة الصناعية",
+         subtitle: "رائدون في تصنيع وتصدير الجلاتين الفنى عالى الجودة بقوة بلوم تتراوح بين 220 إلى 320 لضمان أقصى درجات اللزوجة والكفاءة الصناعية",
          cta: "استعرض المنتجات",
       },
       about: {
@@ -79,10 +112,9 @@ export const t = {
          label: "منتجاتنا",
          title: "منتجات جيلاتين عالية الجودة لمختلف التطبيقات",
          items: [
-         { id: "prod-1", name: "جلاتين صناعى نقى - (hide-glue)", desc: "جيلاتين صناعي نقي مستخلص من مصادر حيوانية عالية الجودة، يتميز بقوة التصاق ممتازة وثبات في الأداء، مما يجعله مناسبًا لمختلف التطبيقات الصناعية." },
-         { id: "prod-2", name: "جلاتين صناعى فائق الجودة - (Technical-Gelatin)", desc: "جيلاتين صناعي فائق الجودة يتميز بدرجة نقاء عالية وخصائص تقنية متقدمة، مما يجعله مناسبًا للتطبيقات الصناعية التي تتطلب أداءً ثابتًا وموثوقًا." },
-         { id: "prod-3", name: "جيلي جلو-(Gelly-Glue)", desc: "جيلي جلو هو غراء جيلاتيني صديق للبيئة، يُصنع من مواد طبيعية عالية الجودة ويوفر أداءً موثوقًا مع تقليل الأثر البيئي، مما يجعله خيارًا مستدامًا لمختلف التطبيقات الصناعية." },
-         { id: "prod-4", name: "ببتيدات الكولاجين", desc: "جيلاتين متحلل للتغذية ومستحضرات التجميل." },
+         { id: "prod-1", name: "جلاتين صناعى نقى (hide glue)", desc: "جيلاتين صناعي نقي مستخلص من مصادر حيوانية عالية الجودة، يتميز بقوة التصاق ممتازة وثبات في الأداء، مما يجعله مناسبًا لمختلف التطبيقات الصناعية." },
+         { id: "prod-2", name: "جلاتين صناعى فائق الجودة (Technical Gelatin)", desc: "جيلاتين صناعي فائق الجودة يتميز بدرجة نقاء عالية وخصائص تقنية متقدمة، مما يجعله مناسبًا للتطبيقات الصناعية التي تتطلب أداءً ثابتًا وموثوقًا." },
+         { id: "prod-3", name: "جيلي جلو (Gelly\u00A0Glue)", desc: "جيلي جلو هو غراء جيلاتيني صديق للبيئة، يُصنع من مواد طبيعية عالية الجودة ويوفر أداءً موثوقًا مع تقليل الأثر البيئي، مما يجعله خيارًا مستدامًا لمختلف التطبيقات الصناعية." },
          ],
       },
       certificate: {
@@ -107,12 +139,6 @@ export const t = {
                desc: "امتثال كامل للتشريعات الأوروبية الخاصة بسلامة المواد الكيميائية وحماية البيئة.",
                type: "تشريعات المواد الكيميائية"
             },
-            {
-               id: "CERT-4",
-               name: "CE Marking",
-               desc: "منتجاتنا مطابقة لمتطلبات الاتحاد الأوروبي من حيث السلامة والصحة وحماية البيئة.",
-               type: "المعايير الأوروبية"
-            }
          ]
       },
       contact: {
