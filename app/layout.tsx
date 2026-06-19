@@ -16,17 +16,11 @@ export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
-<<<<<<< HEAD
-  params?: { lang: string };
 }) {
-  const lang = params?.lang || "en"
+  const lang = "en";
 
-
-=======
-}) {
->>>>>>> 6d05bfaae1f9f4e516acd686cb830eb7965be7ed
   return (
-    <html lang="en" dir="ltr">
+    <html lang={lang} dir="ltr">
       <body>
         <Providers>
           <Header />
