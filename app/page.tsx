@@ -10,7 +10,6 @@ export default function Home() {
       <Hero />
       <About />
       <Products />
-      <Certificates />
       <Contact />
     </main>
   );

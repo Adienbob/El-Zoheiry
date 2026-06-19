@@ -14,13 +14,13 @@ export default function Products() {
          id="Products"
       >
          
-         <p className="text-secondary text-center block md:text-[18px] lg:text-[20px]">
+         <p className="text-secondary text-center block md:text-[18px] lg:text-[26px] mb-5 md:mb-6 lg:mb-7.5">
             {T.products.label}
          </p>
 
          <h2
             id="products-heading"
-            className="font-semibold text-[32px] md:text-[44px] lg:text-[52px] leading-[41px] md:leading-[54px] lg:leading-[62px] text-center text-muted mb-2"
+            className="font-semibold text-[32px] md:text-[44px] lg:text-[52px] leading-[41px] md:leading-[54px] lg:leading-[62px] text-center text-muted mb-2 md:mb-4 lg:mb-5"
          >
             {T.products.title}
          </h2>
@@ -42,7 +42,7 @@ export default function Products() {
                         alt=""
                         aria-hidden="true"
                         fill
-                        className="w-full h-full grayscale group-hover:grayscale-0 transition-all duration-300"
+                        className="w-full h-full"
                      />
                   </div>
 

@@ -8,22 +8,20 @@ export const t = {
          contact: "Contact",
       },
       hero: {
-         since: "ESTABLISHED 1937",
-         title: "Al-Ostaz Industrial Gelatin Company",
+         since: "Since 1937",
+         title: "Al-Ostaz Industrial Gelatin",
          subtitle:
-            "A leading manufacturer and exporter of high-quality technical gelatin with bloom strength ranging from 220 to 320, ensuring maximum viscosity and industrial performance.",
+            "Pioneers in manufacturing and exporting high-quality technical gelatin with bloom strength ranging from 220 to 320, ensuring maximum viscosity and industrial efficiency.",
          cta: "Explore Products",
       },
 
       about: {
          label: "About Us",
-         title: "A Legacy of Excellence in Animal Gelatin Glue Manufacturing",
-         body: `
-            At Al-Ostaz, manufacturing animal gelatin glue is more than a business—it's a craft that has been passed down through generations. Our story began decades ago, preserving and refining the expertise and techniques required to produce pure, high-quality gelatin. Today, we combine this heritage with advanced manufacturing technologies.
+         title: "A Heritage of Excellence in Animal Gelatin Glue Reflected in Superior Quality",
+         body: `At Al-Ostaz, manufacturing animal gelatin glue is not merely a business; it is a craft we have mastered and passed down from generation to generation. Our journey began decades ago, where we inherited and refined the trade secrets and precise techniques required to produce technical industrial gelatin and high-quality gelatin glue. Today, we seamlessly combine our distinguished heritage with the most advanced modern manufacturing technologies.`,
 
-            Throughout the years, we have remained committed to quality and excellence in gelatin glue production. By blending traditional expertise with continuous innovation, we have built a reputation based on trust and reliability, delivering premium products that meet the needs of diverse industries and markets.
-         `,
-         getIt: "Get It Now",
+         secondBody:
+            "Over many years, we have remained committed to quality and excellence in the production of animal gelatin glue. By combining inherited expertise with continuous development, we have built a strong reputation based on trust and reliability, allowing us to deliver high-quality products that meet the needs of various industries and markets.",
       },
 
       products: {
@@ -33,17 +31,17 @@ export const t = {
             {
                id: "prod-1",
                name: "Pure Industrial Gelatin (Hide Glue)",
-               desc: "A high-quality animal-based industrial gelatin with excellent bonding strength and consistent performance for a wide range of industrial applications.",
+               desc: "Pure industrial gelatin derived from high-quality animal sources, offering excellent bonding strength and consistent performance, making it suitable for a wide range of industrial applications.",
             },
             {
                id: "prod-2",
                name: "Premium Technical Gelatin",
-               desc: "A highly refined technical gelatin offering advanced performance characteristics and reliable results for demanding industrial uses.",
+               desc: "A premium-grade industrial gelatin characterized by high purity and advanced technical properties, making it ideal for industrial applications that require reliable and consistent performance.",
             },
             {
                id: "prod-3",
                name: "Gelly Glue",
-               desc: "An eco-friendly gelatin adhesive produced from natural materials, delivering dependable performance while supporting sustainable industrial practices.",
+               desc: "An environmentally friendly gelatin adhesive made from high-quality natural materials, providing reliable performance while reducing environmental impact, making it a sustainable choice for various industrial applications.",
             },
          ],
       },
@@ -95,25 +93,22 @@ export const t = {
       },
       hero: {
          since: "منذ 1937",
-         title: "الأستاذ للجلاتين الصناعي",
-         subtitle: "رائدون في تصنيع وتصدير الجلاتين الفنى عالى الجودة بقوة بلوم تتراوح بين 220 إلى 320 لضمان أقصى درجات اللزوجة والكفاءة الصناعية",
+         title: "الأستاذ للجيلاتين الصناعي",
+         subtitle: "رائدون في تصنيع وتصدير الجيلاتين الفني عالي الجودة بقوة بلوم تتراوح بين 220 إلى 320 لضمان أقصى درجات اللزوجة والكفاءة الصناعية",
          cta: "استعرض المنتجات",
       },
       about: {
          label: "من نحن",
-         title: "تراث من التميز في غراء الجيلاتين الحيواني ينعكس فى جودة عالية",
-         body: `
-            في شركة الأستاذ، تصنيع الغراء الجيلاتيني الحيواني ليس مجرد عمل تجاري؛ إنها حرفة أتقنناها وانتقلنا من جيل إلى جيل. بدأت قصتنا منذ عقود مضت، حيث توارثنا وصقلنا أسرار التجارة والتقنيات الدقيقة لاستخلاص الجيلاتين النقي. اليوم، نحن نمزج بسلاسة بين الخبرة المرموقة في الماضي مع تقنيات التصنيع الحديثة الأكثر تقدمًا.
-            على مدار سنوات طويلة، حافظنا على التزامنا بالجودة والتميز في تصنيع الغراء الجيلاتيني الحيواني. ومن خلال الجمع بين الخبرة المتوارثة والتطوير المستمر، استطعنا بناء سمعة قوية تقوم على الثقة والاعتمادية، لنقدم منتجات عالية الجودة تلبي احتياجات مختلف الصناعات والأسواق.
-         `,
-         getIt: "أحصل عليه الأن"
+         title: "تراث من التميز في غراء الجيلاتين الحيواني يتجسد فى جودة فائقة",
+         body: `في شركة الأستاذ، تصنيع الغراء الجيلاتيني الحيواني ليس مجرد عمل تجاري؛ إنها حرفة أتقنناها وانتقلنا من جيل إلى جيل. بدأت قصتنا منذ عقود مضت، حيث توارثنا وصقلنا أسرار التجارة والتقنيات الدقيقة لاستخلاص الجيلاتين الصناعى التقني وغراء الجيلاتين عالى الجودة. اليوم، نحن نمزج بسلاسة بين الخبرة المرموقة في الماضي مع تقنيات التصنيع الحديثة الأكثر تقدمًا.`,
+         secondBody: "وعلى مدار سنوات طويلة، حافظنا على التزامنا بالجودة والتميز في تصنيع الغراء الجيلاتيني الحيواني. ومن خلال الجمع بين الخبرة المتوارثة والتطوير المستمر، استطعنا بناء سمعة قوية تقوم على الثقة والاعتمادية، لنقدم منتجات عالية الجودة تلبي احتياجات مختلف الصناعات والأسواق"
       },
       products: {
          label: "منتجاتنا",
          title: "منتجات جيلاتين عالية الجودة لمختلف التطبيقات",
          items: [
-         { id: "prod-1", name: "جلاتين صناعى نقى (hide glue)", desc: "جيلاتين صناعي نقي مستخلص من مصادر حيوانية عالية الجودة، يتميز بقوة التصاق ممتازة وثبات في الأداء، مما يجعله مناسبًا لمختلف التطبيقات الصناعية." },
-         { id: "prod-2", name: "جلاتين صناعى فائق الجودة (Technical Gelatin)", desc: "جيلاتين صناعي فائق الجودة يتميز بدرجة نقاء عالية وخصائص تقنية متقدمة، مما يجعله مناسبًا للتطبيقات الصناعية التي تتطلب أداءً ثابتًا وموثوقًا." },
+         { id: "prod-1", name: "جيلاتين صناعى نقى (hide\u00A0glue)", desc: "جيلاتين صناعي نقي مستخلص من مصادر حيوانية عالية الجودة، يتميز بقوة التصاق ممتازة وثبات في الأداء، مما يجعله مناسبًا لمختلف التطبيقات الصناعية." },
+         { id: "prod-2", name: "جيلاتين صناعى فائق الجودة (Technical\u00A0Gelatin)", desc: "جيلاتين صناعي فائق الجودة يتميز بدرجة نقاء عالية وخصائص تقنية متقدمة، مما يجعله مناسبًا للتطبيقات الصناعية التي تتطلب أداءً ثابتًا وموثوقًا." },
          { id: "prod-3", name: "جيلي جلو (Gelly\u00A0Glue)", desc: "جيلي جلو هو غراء جيلاتيني صديق للبيئة، يُصنع من مواد طبيعية عالية الجودة ويوفر أداءً موثوقًا مع تقليل الأثر البيئي، مما يجعله خيارًا مستدامًا لمختلف التطبيقات الصناعية." },
          ],
       },

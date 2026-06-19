@@ -33,7 +33,7 @@ export default function Header() {
          <div className="flex items-center">
             <a href="#Hero">
                <span className="font-display font-bold text-2xl md:text-3xl lg:text-4xl text-muted tracking-[-1.2px] uppercase flex items-center">
-                  <div className="relative h-[40px] w-[37.5px]">
+                  <div className="relative h-[40px] w-[35px]">
                      <Image
                         src="/Alostaz.png"
                         fill
@@ -41,8 +41,8 @@ export default function Header() {
                         alt=""
                      />
                   </div>
-
-                  <p>l-ostaz</p>
+                  <div className="bg-muted w-1 mx-2.5 h-8.5 block"></div>
+                  <p>Al-ostaz</p>
                </span>
             </a>
          </div>

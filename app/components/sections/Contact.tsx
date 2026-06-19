@@ -11,7 +11,7 @@ export default function Contact() {
       <section
          id="Contact"
          aria-labelledby="contact-heading"
-         className="px-6 py-20 bg-second-bg grid md:grid-cols-2 lg:px-20 lg:py-28"
+         className="px-6 py-20 bg-bg grid md:grid-cols-2 lg:px-20 lg:py-28"
       >
          <div>
             <p className="text-secondary tracking-[4px] leading-[24px] mb-3 block md:text-[18px]">
@@ -28,12 +28,12 @@ export default function Contact() {
             <div>
                <h3 className="text-text text-[10px] md:text-[12px] tracking-[2px] leading-[15px] md:leading-[18px] mb-1">Email</h3>
                <p className="text-muted leading-[24px] md:text-[18px] md:leading-[30px] mb-6">
-                  <a href="mailto:info@gelatinfactory.com">info@gelatinfactory.com</a>
+                  <a href="mailto:youseff.zohary1@gmail.com">youseff.zohary1@gmail.com</a>
                </p>
 
                <h3 className="text-text text-[10px] md:text-[12px] tracking-[2px] leading-[15px] md:leading-[18px] mb-1">Phone</h3>
                <p className="text-muted leading-[24px] md:text-[18px] md:leading-[30px] mb-6">
-                  <a href="tel:+201000000000">+20 100 000 0000</a>
+                  <a href="tel:+201033203420">+201033203420</a>
                </p>
 
                <h3 className="text-text text-[10px] md:text-[12px] tracking-[2px] leading-[15px] md:leading-[18px]">Address</h3>
