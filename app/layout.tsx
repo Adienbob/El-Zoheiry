@@ -14,16 +14,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  params,
 }: {
   children: React.ReactNode;
+<<<<<<< HEAD
   params?: { lang: string };
 }) {
   const lang = params?.lang || "en"
 
 
+=======
+}) {
+>>>>>>> 6d05bfaae1f9f4e516acd686cb830eb7965be7ed
   return (
-    <html lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}>
+    <html lang="en" dir="ltr">
       <body>
         <Providers>
           <Header />
