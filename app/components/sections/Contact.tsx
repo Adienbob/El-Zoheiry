@@ -33,11 +33,14 @@ export default function Contact() {
 
                <h3 className="text-text text-[10px] md:text-[12px] tracking-[2px] leading-[15px] md:leading-[18px] mb-1">Phone</h3>
                <p className="text-muted leading-[24px] md:text-[18px] md:leading-[30px] mb-6">
-                  <a href="tel:+201033203420">+201033203420</a>
+                  <a href="tel:+201033203430">+201033203430</a>
+               </p>
+               <p className="text-muted leading-[24px] md:text-[18px] md:leading-[30px] mb-6">
+                  <a href="tel:+201144167070">+201144167070</a>
                </p>
 
                <h3 className="text-text text-[10px] md:text-[12px] tracking-[2px] leading-[15px] md:leading-[18px]">Address</h3>
-               <p className="text-muted leading-[24px] md:text-[18px] md:leading-[30px]">Industrial Zone, Cairo, Egypt</p>
+               <p className="text-muted leading-[24px] md:text-[18px] md:leading-[30px]">{T.contact.adress}</p>
             </div>
          </div>
 

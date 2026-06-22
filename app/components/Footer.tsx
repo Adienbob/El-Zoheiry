@@ -8,7 +8,7 @@ export default function Footer() {
    const T = t[lang]
    
    return (
-      <footer className="flex flex-col items-center gap-7.5 text-center border-t-2 border-secondary px-6 py-20 lg:py-24 bg-second-bg">
+      <footer dir="ltr" className="flex flex-col items-center gap-7.5 text-center border-t-2 border-secondary px-6 py-20 lg:py-24 bg-second-bg">
          <div className="flex flex-col gap-2.5 items-center">
             <div className="flex justc relative h-[40px] w-[50px]">
                <Image
@@ -44,7 +44,7 @@ export default function Footer() {
          </nav>
 
          <p className="tracking-[1px] leading-[15px] text-[10px] md:text-sm lg:text-base text-secondary">
-            © 2024 AL-OSTAZ INDUSTRIAL GELATIN COMPANY. ALL RIGHTS RESERVED.
+            {T.footer.rights}
          </p>
       </footer>
    )

@@ -8,7 +8,7 @@ export const t = {
          contact: "Contact",
       },
       hero: {
-         since: "Since 1937",
+         since: "Since 1930",
          title: "Al-Ostaz Industrial Gelatin",
          subtitle:
             "Pioneers in manufacturing and exporting high-quality technical gelatin with bloom strength ranging from 220 to 320, ensuring maximum viscosity and industrial efficiency.",
@@ -32,16 +32,19 @@ export const t = {
                id: "prod-1",
                name: "Pure Industrial Gelatin (Hide Glue)",
                desc: "Pure industrial gelatin derived from high-quality animal sources, offering excellent bonding strength and consistent performance, making it suitable for a wide range of industrial applications.",
+               btn: "Product inquiries",
             },
             {
                id: "prod-2",
                name: "Premium Technical Gelatin",
                desc: "A premium-grade industrial gelatin characterized by high purity and advanced technical properties, making it ideal for industrial applications that require reliable and consistent performance.",
+               btn: "Product inquiries",
             },
             {
                id: "prod-3",
-               name: "Gelly Glue",
+               name: "Jelly Glue",
                desc: "An environmentally friendly gelatin adhesive made from high-quality natural materials, providing reliable performance while reducing environmental impact, making it a sustainable choice for various industrial applications.",
+               btn: "Product inquiries",
             },
          ],
       },
@@ -76,10 +79,11 @@ export const t = {
          name: "Full Name",
          email: "Email Address",
          message: "Your Message",
+         adress: "Leather City, Rubiki (Plot K1), Badr City, Cairo, Egypt",
          send: "Send Message",
       },
       footer: {
-         rights: "All rights reserved.",
+         rights: "© 2024 AL-OSTAZ INDUSTRIAL GELATIN COMPANY. ALL RIGHTS RESERVED.",
       },
    },
 
@@ -92,7 +96,7 @@ export const t = {
          contact: "تواصل معنا",
       },
       hero: {
-         since: "منذ 1937",
+         since: "منذ 1930",
          title: "الأستاذ للجيلاتين الصناعي",
          subtitle: "رائدون في تصنيع وتصدير الجيلاتين الفني عالي الجودة بقوة بلوم تتراوح بين 220 إلى 320 لضمان أقصى درجات اللزوجة والكفاءة الصناعية",
          cta: "استعرض المنتجات",
@@ -107,9 +111,24 @@ export const t = {
          label: "منتجاتنا",
          title: "منتجات جيلاتين عالية الجودة لمختلف التطبيقات",
          items: [
-         { id: "prod-1", name: "جيلاتين صناعى نقى (hide\u00A0glue)", desc: "جيلاتين صناعي نقي مستخلص من مصادر حيوانية عالية الجودة، يتميز بقوة التصاق ممتازة وثبات في الأداء، مما يجعله مناسبًا لمختلف التطبيقات الصناعية." },
-         { id: "prod-2", name: "جيلاتين صناعى فائق الجودة (Technical\u00A0Gelatin)", desc: "جيلاتين صناعي فائق الجودة يتميز بدرجة نقاء عالية وخصائص تقنية متقدمة، مما يجعله مناسبًا للتطبيقات الصناعية التي تتطلب أداءً ثابتًا وموثوقًا." },
-         { id: "prod-3", name: "جيلي جلو (Gelly\u00A0Glue)", desc: "جيلي جلو هو غراء جيلاتيني صديق للبيئة، يُصنع من مواد طبيعية عالية الجودة ويوفر أداءً موثوقًا مع تقليل الأثر البيئي، مما يجعله خيارًا مستدامًا لمختلف التطبيقات الصناعية." },
+         { 
+            id: "prod-1", 
+            name: "جيلاتين صناعى نقى (Hide\u00A0Glue)", 
+            desc: "جيلاتين صناعي نقي مستخلص من مصادر حيوانية عالية الجودة، يتميز بقوة التصاق ممتازة وثبات في الأداء، مما يجعله مناسبًا لمختلف التطبيقات الصناعية.", 
+            btn: "للاستفسار عن المنتج" 
+         },
+         { 
+            id: "prod-2", 
+            name: "جيلاتين صناعى فائق الجودة (Technical\u00A0Gelatin)", 
+            desc: "جيلاتين صناعي فائق الجودة يتميز بدرجة نقاء عالية وخصائص تقنية متقدمة، مما يجعله مناسبًا للتطبيقات الصناعية التي تتطلب أداءً ثابتًا وموثوقًا.", 
+            btn: "للاستفسار عن المنتج" 
+         },
+         { 
+            id: "prod-3", 
+            name: "جيلي جلو (Jelly\u00A0Glue)", 
+            desc: "جيلي جلو هو غراء جيلاتيني صديق للبيئة، يُصنع من مواد طبيعية عالية الجودة ويوفر أداءً موثوقًا مع تقليل الأثر البيئي، مما يجعله خيارًا مستدامًا لمختلف التطبيقات الصناعية.", 
+            btn: "للاستفسار عن المنتج" 
+         },
          ],
       },
       certificate: {
@@ -142,10 +161,11 @@ export const t = {
          name: "الاسم الكامل",
          email: "البريد الإلكتروني",
          message: "رسالتك",
+         adress: "مدينة الجلود، بروبيكي قطعة ك1، مدينة بدر، القاهرة، مصر",
          send: "إرسال الرسالة",
       },
       footer: {
-         rights: "جميع الحقوق محفوظة.",
+         rights: "© 2024 شركة الأستاذ للجيلاتين الصناعي. جميع الحقوق محفوظة.",
       },
    },
 };

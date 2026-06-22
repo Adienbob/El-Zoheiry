@@ -48,7 +48,7 @@ export default function Products() {
 
                   <h3
                      id={`product-${item.id}-title`}
-                     className="mb-3 text-[24px] md:text-[28px] lg:text-[30px] text-muted leading-[33px] md:leading-[38px] lg:leading-[42px]"
+                     className="mb-3 text-[24px] md:text-[28px] lg:text-[30px] font-semibold text-muted leading-[33px] md:leading-[38px] lg:leading-[42px]"
                   >
                      {item.name}
                   </h3>
@@ -62,7 +62,7 @@ export default function Products() {
                      aria-label={`Get ${item.name} now`}
                      className="text-secondary mt-6 block text-[12px] md:text-[14px] lg:text-[15px] tracking-[1px] hover:opacity-80 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2"
                   >
-                     GET IT NOW
+                     {item.btn}
                   </a>
                </article>
             ))}
