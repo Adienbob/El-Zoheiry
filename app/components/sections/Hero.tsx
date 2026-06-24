@@ -21,6 +21,7 @@ export default function Hero() {
                aria-hidden="true"
                fill
                priority
+               fetchPriority="high"
                className="object-cover"
             />
 

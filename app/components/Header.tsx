@@ -37,6 +37,8 @@ export default function Header() {
                      <Image
                         src="/Alostaz.png"
                         fill
+                        fetchPriority="high"
+                        sizes="40px"
                         className="object-contain"
                         alt=""
                      />
